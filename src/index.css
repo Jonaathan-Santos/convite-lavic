@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "Peppa Pig";
-  src: url("Peppa Pig.ttf");
+  src: url("../Peppa Pig.ttf");
 }
 
 body{
@@ -50,7 +50,7 @@ font-family: 'Peppa Pig';
 }
 
 .fundo{
-  background-image: url('./fundo-azul.png');
+  background-image: url('../fundo-azul.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
