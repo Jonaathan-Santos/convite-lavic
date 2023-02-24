@@ -38,7 +38,7 @@ function Generate({ onCancel }: GenerateProps) {
                 {`https://convite-lavic.vercel.app/${encodeURI(Names.join("-"))}`}
               </span>
               <div className='w-full flex'>
-                <a href={`whatsapp://send?text=Olá, Você acaba de receber um convite de *Rosilene e Angelo*, Acesse o link para conferir: https://rosileneangelo.vercel.app/${encodeURI(Names.join("-"))}`}>
+                <a href={`whatsapp://send?text=Olá, Você acaba de receber um convite de *Lavic ruan*, Acesse o link para conferir: https://convite-lavic.vercel.app/${encodeURI(Names.join("-"))}`}>
 
                   <div className='flex-1 flex m-2 bg-rosa text-marinho rounded-md p-2 justify-center items-center'>
                     <WhatsappLogo size={30} />
