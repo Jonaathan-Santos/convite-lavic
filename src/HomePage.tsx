@@ -33,7 +33,7 @@ function HomePage() {
     {
       name: "confirm",
       desc: "Confirmação",
-      component: () => <Confirm onCancel={setPopup} confirm={confirm} onStorageConfirm={setConfirm} />,
+      component: () => <Confirm onCancel={setPopup}/>,
       icon: () => <CalendarCheck size={50} className="text-rosa" weight="bold" />
     },
     
