@@ -12,10 +12,10 @@ export async function onConfirm (nome: string){
   const confirmName = await  api.post('/confirm', {nome})
   console.log(confirmName)
 
-  if(true){
+  
 
     localStorage.setItem("confirmStorage", JSON.stringify({confirm: true}))
-  }
+  
 }
 
 export async function onList (){
