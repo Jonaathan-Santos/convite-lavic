@@ -5,15 +5,29 @@ import { onConfirm } from '../utils/api'
 interface confirmProps {
   onCancel: (arg: any) => void
   onStorageConfirm: (arg: any) => void
-  confirm: boolean
+
 
 }
-function Confirm({ onCancel, confirm, onStorageConfirm }: confirmProps) {
+function Confirm({ onCancel, onStorageConfirm }: confirmProps) {
+
+  const [confirm, setConfirm] =  useState(false)
 
   const params = useParams()
 
   const names = params.names ? params.names.split("-") : [""]
   const nameArg = params.names ? params.names : ""
+
+
+  useEffect(() => {
+    if(!localStorage.getItem("confirmStorage")){
+      return
+    }else{
+      setConfirm(true)
+    }
+  
+  }, [])
+
+
 
   return (
     <div
