@@ -5,7 +5,7 @@ export interface ConvidadoList{
   nome: string
 }
 const api = axios.create({
-  baseURL: 'https://server-convite-production.up.railway.app'
+  baseURL: 'https://convite-server-production.up.railway.app'
 })
 
 export async function onConfirm (nome: string){
