@@ -1,6 +1,7 @@
 import { X } from 'phosphor-react'
 import { useParams } from 'react-router-dom'
 import { onConfirm } from '../utils/api'
+import {useState, useEffect} from 'react'
 
 interface confirmProps {
   onCancel: (arg: any) => void
@@ -8,7 +9,7 @@ interface confirmProps {
 
 
 }
-function Confirm({ onCancel, onStorageConfirm }: confirmProps) {
+function Confirm({ onCancel }: confirmProps) {
 
   const [confirm, setConfirm] =  useState(false)
 
