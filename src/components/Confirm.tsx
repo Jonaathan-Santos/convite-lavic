@@ -5,7 +5,6 @@ import {useState, useEffect} from 'react'
 
 interface confirmProps {
   onCancel: (arg: any) => void
-  onStorageConfirm: (arg: any) => void
 
 
 }

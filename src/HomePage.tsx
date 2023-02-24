@@ -16,7 +16,6 @@ function HomePage() {
   }
 
   const [Popup, setPopup] = useState<popapType>({ show: false, item: 0 })
-  const [confirm, setConfirm] = useState(false)
   const popups = [
     {
       name: "horario",
@@ -41,14 +40,6 @@ function HomePage() {
   ]
 
 
-  useEffect(() => {
-    if(!localStorage.getItem("confirmStorage")){
-      return
-    }else{
-      setConfirm(true)
-    }
-  
-  }, [])
   
 
 
