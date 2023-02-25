@@ -2,55 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @font-face {
   font-family: "Peppa Pig";
   src: url("../Peppa Pig.ttf");
 }
 
-body{
-  
+body {
   height: 100%;
   background-color: #e7d5e7;
 }
-
 
 #root {
   padding: 0 !important;
   margin: 0;
   box-sizing: border-box;
   background-color: red;
-  font-family: 'Peppa Pig'
-
+  font-family: "Peppa Pig";
 }
 
 * {
-  font-family: 'Peppa Pig';
+  font-family: "Peppa Pig";
   z-index: 1;
-
 }
 
 .dourado {
   color: rgb(185, 135, 9);
-
 }
 
 .font-principal {
-font-family: 'Peppa Pig';
+  font-family: "Peppa Pig";
 }
 
-.font-strok{
-
-  text-shadow:
-     -2px -2px 0 #0079BE,  
-      2px -2px 0 #0079BE,
-      -2px 2px 0 #0079BE,
-       2px 2px 0 #0079BE;
+.font-strok {
+  text-shadow: -2px -2px 0 #0079be, 2px -2px 0 #0079be, -2px 2px 0 #0079be,
+    2px 2px 0 #0079be;
 }
 
-.fundo{
-  background-image: url('../fundo-azul.png');
+.fundo {
+  background-image: url("../fundo-azul.png");
   background-size: cover;
   background-repeat: no-repeat;
 }

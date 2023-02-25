@@ -1,12 +1,12 @@
 import { Info } from 'phosphor-react'
 import { useEffect, useState } from 'react'
-import { ConvidadoList, onList } from './utils/api'
+import { onList } from './utils/apiFire'
 
 interface ConfirmedProps{
   onPage: (arg: boolean)=> void
 }
 function Confirmed({onPage}: ConfirmedProps) {
-  const [ListConfirm, setListConfirm] = useState<ConvidadoList[]>([])
+  const [ListConfirm, setListConfirm] = useState<any[]>([])
   useEffect(() => {
 
     const getList = async () => setListConfirm(await onList())

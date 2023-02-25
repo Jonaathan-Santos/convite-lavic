@@ -1,13 +1,14 @@
 import { X } from 'phosphor-react'
 import { useParams } from 'react-router-dom'
-import { onConfirm } from '../utils/api'
+import { onConfirm } from '../utils/apiFire'
 
 interface confirmProps {
   onCancel: (arg: any) => void
   onStorageConfirm: (arg: any) => void
   confirm: boolean
-
 }
+
+
 function Confirm({ onCancel, confirm, onStorageConfirm }: confirmProps) {
 
   const params = useParams()
