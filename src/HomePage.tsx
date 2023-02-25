@@ -1,5 +1,5 @@
 import { CalendarCheck, Clock, MapPin } from 'phosphor-react'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import Confirm from './components/Confirm'
 import Fundo from './components/Fundo'
 import Horario from './components/Horario'
@@ -16,7 +16,6 @@ function HomePage() {
   }
 
   const [Popup, setPopup] = useState<popapType>({ show: false, item: 0 })
-  const [confirm, setConfirm] = useState(false)
   const popups = [
     {
       name: "horario",
@@ -33,7 +32,7 @@ function HomePage() {
     {
       name: "confirm",
       desc: "Confirmação",
-      component: () => <Confirm onCancel={setPopup} confirm={confirm} onStorageConfirm={setConfirm} />,
+      component: () => <Confirm onCancel={setPopup}/>,
       icon: () => <CalendarCheck size={50} className="text-rosa" weight="bold" />
     },
     
@@ -41,14 +40,6 @@ function HomePage() {
   ]
 
 
-  useEffect(() => {
-    if(!localStorage.getItem("confirmStorage")){
-      return
-    }else{
-      setConfirm(true)
-    }
-  
-  }, [])
   
 
 

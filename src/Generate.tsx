@@ -28,17 +28,17 @@ function Generate({ onCancel }: GenerateProps) {
         >
 
           <Form ref={formRef} onSubmit={NameFormeSubmit} className="flex flex-col my-4">
-            <Input name="name" type="name" placeholder="Nome" className="pl-2 rounded-md w-full h-[40px]" />
+            <Input name="name" type="name" placeholder="Nome" className="pl-2 rounded-md w-full h-[40px] text-black" />
             <button type="submit" className='w-full my-4 bg-marinho h-[40px] rounded-md active:bg-rosa text-white'>Adicionar</button>
           </Form>
           {
 
             Names.length > 0 && <div className='text-md w-full bg-marinho p-3'>
               <span>
-                {`https://rosileneangelo.vercel.app/${encodeURI(Names.join("-"))}`}
+                {`https://convite-lavic.vercel.app/${encodeURI(Names.join("-"))}`}
               </span>
               <div className='w-full flex'>
-                <a href={`whatsapp://send?text=Olá, Você acaba de receber um convite de *Rosilene e Angelo*, Acesse o link para conferir: https://rosileneangelo.vercel.app/${encodeURI(Names.join("-"))}`}>
+                <a href={`whatsapp://send?text=Olá, Você acaba de receber um convite de *Lavic ruan*, Acesse o link para conferir: https://convite-lavic.vercel.app/${encodeURI(Names.join("-"))}`}>
 
                   <div className='flex-1 flex m-2 bg-rosa text-marinho rounded-md p-2 justify-center items-center'>
                     <WhatsappLogo size={30} />

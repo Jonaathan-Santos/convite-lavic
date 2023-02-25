@@ -5,17 +5,17 @@ export interface ConvidadoList{
   nome: string
 }
 const api = axios.create({
-  baseURL: 'https://server-convite-production.up.railway.app'
+  baseURL: 'https://convite-server-production.up.railway.app'
 })
 
 export async function onConfirm (nome: string){
   const confirmName = await  api.post('/confirm', {nome})
   console.log(confirmName)
 
-  if(confirmName.data.nome == nome){
+  
 
     localStorage.setItem("confirmStorage", JSON.stringify({confirm: true}))
-  }
+  
 }
 
 export async function onList (){
